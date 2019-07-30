@@ -1,7 +1,10 @@
 <div class="dog container">
 	<h1>Funny Dog Meme</h1>
 	<%= image_tag 'dog_pic.png', class: 'img-fluid' %>
-	<h1><%= @fact.content %></h1>
+	
+	<% if @fact %>
+		<h1><%= @fact.content %></h1>
+	<% end %>
 
 	<div class="col-12 links">
     <%= link_to 'Contribute', new_fact_path, class: 'btn btn-danger' %>
