@@ -1,0 +1,6 @@
+<h1>Enter Your Fact Details</h1>
+<%= simple_form_for @fact do |f| %>
+  <%= f.input :content %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %>
